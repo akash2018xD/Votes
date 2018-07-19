@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#292426"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:src="@drawable/bdc"
+        android:layout_centerInParent="true"
+        android:tint="#2ecc71"
+        android:id="@+id/bdv"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:text="Congratulations on joining 1 crore other voters!"
+        android:layout_below="@+id/bdv"
+        />
+
+</RelativeLayout>

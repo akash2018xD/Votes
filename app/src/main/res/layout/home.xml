@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#292426"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/state"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/prop1"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imagePro"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sarthak Mishra"
+        android:id="@+id/textName"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignRight="@+id/imagePro"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textName"
+        android:id="@+id/prime"
+        android:text="Prime"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/pabout"
+        android:text="Major polls happening right now"
+        android:layout_below="@+id/prime"
+        android:textColor="@color/colorAccent"
+        />
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_below="@+id/pabout"
+    android:id="@+id/recyclerMain"
+    >
+</android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclerMain"
+        android:id="@+id/Local"
+        android:text="Local"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/about"
+        android:text="Local polls happening in your locality"
+        android:layout_below="@+id/Local"
+        android:textColor="@color/colorAccent"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about"
+        android:layout_marginTop="20dp"
+        android:id="@+id/recyclerPolls"
+        >
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

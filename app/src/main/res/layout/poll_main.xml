@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="385dp" android:layout_height="wrap_content"
+    android:id="@+id/relMainPoll"
+    android:padding="10dp"
+    >
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="80dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_fingerprint_black_48dp"
+            android:id="@+id/image"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/image"
+        android:text="Lok Sabha Ac"
+        />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Modi Wins agaia!"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/title"
+        android:id="@+id/about"
+        />
+</RelativeLayout>
